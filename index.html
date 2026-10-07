@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B2B FlowOS | Autonomous Lead-to-Close Infrastructure</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            },
+            darkBg: '#090A0F',
+            darkCard: '#11131F',
+            darkBorder: '#1F2338',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .glow-effect {
+      background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+    }
+  </style>
+</head>
+<body class="bg-darkBg text-slate-200 antialiased selection:bg-brand-500 selection:text-white">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="bg-brand-600/20 border-b border-brand-500/30 px-4 py-2 text-center text-xs sm:text-sm font-medium text-brand-300">
+    ⚡ <strong>Spring 2026 Release:</strong> Complete Make.com + Python AI Outbound Bundle is now live. 
+    <span class="underline ml-1 cursor-pointer" onclick="scrollToPricing()">Claim Instant Access &rarr;</span>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="border-b border-darkBorder/60 bg-darkBg/80 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <div class="w-8 h-8 rounded-lg bg-brand-500 flex items-center justify-center font-black text-white text-lg">⚡</div>
+        <span class="text-xl font-bold tracking-tight text-white">FlowOS<span class="text-brand-500">.ai</span></span>
+      </div>
+      <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-400">
+        <a href="#features" class="hover:text-white transition">Architecture</a>
+        <a href="#calculator" class="hover:text-white transition">ROI Calculator</a>
+        <a href="#pricing" class="hover:text-white transition">Pricing</a>
+        <a href="#faq" class="hover:text-white transition">FAQ</a>
+      </div>
+      <button onclick="scrollToPricing()" class="bg-white hover:bg-slate-100 text-slate-900 font-semibold px-4 py-2 rounded-lg text-sm transition shadow-sm">
+        Get Blueprints
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="relative glow-effect pt-20 pb-28 px-6 text-center">
+    <div class="max-w-4xl mx-auto">
+      <div class="inline-flex items-center space-x-2 bg-darkCard border border-darkBorder px-3 py-1.5 rounded-full text-xs text-slate-300 mb-8">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>Replaces a $3,500/mo SDR Team with Zero Headcount</span>
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-[1.15] mb-6">
+        Stop Paying Humans for Data Entry.<br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-indigo-300">Clone Our Autonomous B2B Engine</span> in 10 Mins.
+      </h1>
+
+      <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+        Production-ready Make.com blueprints, real-time scraping Python scripts, and enterprise prompt injection systems that generate qualified sales pipeline on autopilot.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <button onclick="scrollToPricing()" class="w-full sm:w-auto bg-brand-600 hover:bg-brand-500 text-white font-bold px-8 py-4 rounded-xl text-base transition shadow-lg shadow-brand-600/30 flex items-center justify-center gap-2">
+          <span>Download Autonomous OS Bundle</span>
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </button>
+        <a href="#demo" class="w-full sm:w-auto bg-darkCard hover:bg-slate-800 border border-darkBorder text-slate-300 font-semibold px-8 py-4 rounded-xl text-base transition">
+          View Raw Code Architecture
+        </a>
+      </div>
+
+      <!-- Social Proof Metrics -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-3xl mx-auto mt-16 pt-10 border-t border-darkBorder/60 text-left">
+        <div>
+          <div class="text-3xl font-extrabold text-white">$0.003</div>
+          <div class="text-xs text-slate-400 mt-1">Cost Per Enriched Lead</div>
+        </div>
+        <div>
+          <div class="text-3xl font-extrabold text-white">35.4%</div>
+          <div class="text-xs text-slate-400 mt-1">Avg Cold Email Open Rate</div>
+        </div>
+        <div>
+          <div class="text-3xl font-extrabold text-white">10 Mins</div>
+          <div class="text-xs text-slate-400 mt-1">Total Setup & Import Time</div>
+        </div>
+        <div>
+          <div class="text-3xl font-extrabold text-white">99.8%</div>
+          <div class="text-xs text-slate-400 mt-1">Hands-off Automation Uptime</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- LIVE CODE PREVIEW SECTION -->
+  <section id="demo" class="py-20 px-6 max-w-5xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-2xl sm:text-3xl font-bold text-white">Engineered for Technical Solopreneurs</h2>
+      <p class="text-slate-400 mt-2 text-sm sm:text-base">No bloated SaaS subscriptions. Clean, audit-friendly, open code assets you own forever.</p>
+    </div>
+
+    <div class="bg-darkCard border border-darkBorder rounded-2xl overflow-hidden shadow-2xl">
+      <div class="bg-[#161928] px-4 py-3 border-b border-darkBorder flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <div class="w-3 h-3 rounded-full bg-rose-500"></div>
+          <div class="w-3 h-3 rounded-full bg-amber-500"></div>
+          <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+          <span class="text-xs text-slate-400 font-mono ml-2">pipeline_engine.py</span>
+        </div>
+        <span class="text-xs text-slate-400 font-mono">Python 3.11+ / OpenAI v1.0+</span>
+      </div>
+      <div class="p-6 overflow-x-auto text-xs sm:text-sm font-mono text-slate-300 leading-relaxed bg-[#0c0e17]">
+        <p><span class="text-purple-400">def</span> <span class="text-blue-400">execute_cold_pipeline</span>(target_url: <span class="text-emerald-400">str</span>):</p>
+        <p class="pl-4 text-slate-500"># 1. Scrapes context & strips overhead</p>
+        <p class="pl-4">site_context = extract_website_text(target_url)</p>
+        <p class="pl-4 text-slate-500"># 2. Diagnoses exact bottleneck using deterministic LLM JSON schema</p>
+        <p class="pl-4">diagnosis = client.chat.completions.create(model=<span class="text-emerald-300">"gpt-4o-mini"</span>, ...)</p>
+        <p class="pl-4 text-slate-500"># 3. Dispatches customized draft straight to your outreach queue</p>
+        <p class="pl-4">gmail.create_draft(subject=diagnosis[<span class="text-emerald-300">"subject"</span>], body=diagnosis[<span class="text-emerald-300">"body"</span>])</p>
+        <p class="pl-4 text-purple-400">return</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROI CALCULATOR SECTION -->
+  <section id="calculator" class="py-20 px-6 max-w-4xl mx-auto border-t border-darkBorder/60">
+    <div class="bg-gradient-to-b from-darkCard to-[#0c0e17] border border-darkBorder p-8 sm:p-12 rounded-3xl text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold text-white mb-3">Interactive Solopreneur ROI Calculator</h2>
+      <p class="text-slate-400 text-sm mb-8">Calculate how much human labor cost you eliminate each month.</p>
+
+      <div class="max-w-md mx-auto space-y-6 text-left">
+        <div>
+          <div class="flex justify-between text-sm mb-2 font-medium">
+            <span class="text-slate-300">Target Monthly B2B Leads:</span>
+            <span id="leadVal" class="text-brand-400 font-bold">500</span>
+          </div>
+          <input type="range" id="leadInput" min="100" max="3000" step="50" value="500" class="w-full accent-brand-500 bg-darkBorder h-2 rounded-lg cursor-pointer">
+        </div>
+
+        <div class="p-6 bg-darkBg border border-darkBorder rounded-2xl flex items-center justify-between">
+          <div>
+            <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Estimated Human SDR Cost</div>
+            <div id="humanCost" class="text-2xl font-bold text-rose-400 mt-1">$2,500/mo</div>
+          </div>
+          <div class="text-right">
+            <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">FlowOS Automated Cost</div>
+            <div id="aiCost" class="text-2xl font-bold text-emerald-400 mt-1">$1.50/mo</div>
+          </div>
+        </div>
+
+        <div class="text-center pt-2">
+          <div class="text-sm text-slate-400">Your Annual Solopreneur Savings:</div>
+          <div id="annualSavings" class="text-3xl font-extrabold text-white mt-1">$29,982 / yr</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING TIERS -->
+  <section id="pricing" class="py-24 px-6 max-w-6xl mx-auto border-t border-darkBorder/60">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white">One-Time Investment. Lifetime Ownership.</h2>
+      <p class="text-slate-400 mt-3 text-base">No recurring monthly SaaS tax. Buy once, download the source assets, deploy on your own terms.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Tier 1 -->
+      <div class="bg-darkCard border border-darkBorder rounded-2xl p-8 flex flex-col justify-between">
+        <div>
+          <h3 class="text-lg font-bold text-white">Starter Script Pack</h3>
+          <p class="text-xs text-slate-400 mt-1">For DIY developers starting out</p>
+          <div class="mt-6 mb-6">
+            <span class="text-4xl font-extrabold text-white">$49</span>
+            <span class="text-slate-400 text-xs">/ one-time</span>
+          </div>
+          <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+            <li class="flex items-center gap-2">✓ Python Lead Scraper & Enricher</li>
+            <li class="flex items-center gap-2">✓ 3 Core B2B Cold Prompts</li>
+            <li class="flex items-center gap-2">✓ Local CSV Pipeline Engine</li>
+            <li class="flex items-center gap-2 text-slate-500">✕ Make.com 1-Click Blueprints</li>
+            <li class="flex items-center gap-2 text-slate-500">✕ Notion Workspace OS</li>
+          </ul>
+        </div>
+        <button class="mt-8 w-full bg-slate-800 hover:bg-slate-700 text-white font-semibold py-3 rounded-xl text-sm transition">
+          Purchase Starter ($49)
+        </button>
+      </div>
+
+      <!-- Tier 2 (Highlighted) -->
+      <div class="bg-gradient-to-b from-[#181a2e] to-darkCard border-2 border-brand-500 rounded-2xl p-8 flex flex-col justify-between relative shadow-2xl shadow-brand-500/10">
+        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-500 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+          Most Popular
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-white">Autonomous OS Bundle</h3>
+          <p class="text-xs text-slate-400 mt-1">Complete system for solo operators</p>
+          <div class="mt-6 mb-6">
+            <span class="text-4xl font-extrabold text-white">$149</span>
+            <span class="text-slate-400 text-xs">/ one-time</span>
+          </div>
+          <ul class="space-y-3 text-xs sm:text-sm text-slate-200">
+            <li class="flex items-center gap-2">✓ <strong>All Starter Assets Included</strong></li>
+            <li class="flex items-center gap-2">✓ <strong>Make.com Complete Blueprints (JSON)</strong></li>
+            <li class="flex items-center gap-2">✓ Full Notion Client & CRM Hub</li>
+            <li class="flex items-center gap-2">✓ 15x Objection Handling Matrices</li>
+            <li class="flex items-center gap-2">✓ Video Walkthrough Installation</li>
+          </ul>
+        </div>
+        <a href="https://buy.stripe.com/test_28E14m2MiaUO8wK4mP18c01" target="_blank" class="mt-8 w-full block text-center bg-brand-600 hover:bg-brand-500 text-white font-bold py-3.5 rounded-xl text-sm transition shadow-lg shadow-brand-600/30">
+  Get Complete Bundle ($149)
+</a>
+      </div>
+
+      <!-- Tier 3 -->
+      <div class="bg-darkCard border border-darkBorder rounded-2xl p-8 flex flex-col justify-between">
+        <div>
+          <h3 class="text-lg font-bold text-white">Agency Commercial Suite</h3>
+          <p class="text-xs text-slate-400 mt-1">For multi-client deployments</p>
+          <div class="mt-6 mb-6">
+            <span class="text-4xl font-extrabold text-white">$299</span>
+            <span class="text-slate-400 text-xs">/ one-time</span>
+          </div>
+          <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+            <li class="flex items-center gap-2">✓ Everything in Autonomous OS</li>
+            <li class="flex items-center gap-2">✓ <strong>Unlimited Commercial License</strong></li>
+            <li class="flex items-center gap-2">✓ Resell to Clients as a Service</li>
+            <li class="flex items-center gap-2">✓ Private Discord & Quarterly Updates</li>
+            <li class="flex items-center gap-2">✓ 1:1 Async Workflow Review</li>
+          </ul>
+        </div>
+        <button class="mt-8 w-full bg-slate-800 hover:bg-slate-700 text-white font-semibold py-3 rounded-xl text-sm transition">
+          Get Agency Suite ($299)
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section id="faq" class="py-20 px-6 max-w-3xl mx-auto border-t border-darkBorder/60">
+    <h2 class="text-2xl sm:text-3xl font-bold text-white text-center mb-10">Frequently Asked Questions</h2>
+    <div class="space-y-4">
+      <div class="border border-darkBorder rounded-xl bg-darkCard p-5 cursor-pointer" onclick="toggleFaq(this)">
+        <div class="flex justify-between items-center font-medium text-white text-sm sm:text-base">
+          <span>Do I need advanced coding knowledge to run this?</span>
+          <span class="text-slate-400 faq-icon">+</span>
+        </div>
+        <p class="mt-3 text-xs sm:text-sm text-slate-400 hidden faq-content">
+          No. The Make.com blueprints require zero code—just import the JSON file and paste your OpenAI and Airtable API keys. The Python scripts are designed with clear comments; run a single terminal command and you're live.
+        </p>
+      </div>
+
+      <div class="border border-darkBorder rounded-xl bg-darkCard p-5 cursor-pointer" onclick="toggleFaq(this)">
+        <div class="flex justify-between items-center font-medium text-white text-sm sm:text-base">
+          <span>What are the ongoing operating costs?</span>
+          <span class="text-slate-400 faq-icon">+</span>
+        </div>
+        <p class="mt-3 text-xs sm:text-sm text-slate-400 hidden faq-content">
+          Practically zero. Running 1,000 lead enrichments through GPT-4o-mini costs under $3.00 in OpenAI API usage. Make.com provides a free tier that handles up to 1,000 monthly operations.
+        </p>
+      </div>
+
+      <div class="border border-darkBorder rounded-xl bg-darkCard p-5 cursor-pointer" onclick="toggleFaq(this)">
+        <div class="flex justify-between items-center font-medium text-white text-sm sm:text-base">
+          <span>How does product fulfillment work?</span>
+          <span class="text-slate-400 faq-icon">+</span>
+        </div>
+        <p class="mt-3 text-xs sm:text-sm text-slate-400 hidden faq-content">
+          Immediately after checkout via Lemon Squeezy, you will receive an instant redirect and email containing direct GitHub repository access, downloadable JSON blueprints, and a 1-click Notion template duplication link.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-darkBorder/60 py-12 px-6 text-center text-xs text-slate-500">
+    <p>&copy; 2026 FlowOS.ai. All rights reserved. Built for autonomous digital nomad builders.</p>
+  </footer>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    function scrollToPricing() {
+      document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function toggleFaq(el) {
+      const content = el.querySelector('.faq-content');
+      const icon = el.querySelector('.faq-icon');
+      if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        icon.textContent = '−';
+      } else {
+        content.classList.add('hidden');
+        icon.textContent = '+';
+      }
+    }
+
+    // ROI Calculator Event Listener
+    const leadInput = document.getElementById('leadInput');
+    const leadVal = document.getElementById('leadVal');
+    const humanCost = document.getElementById('humanCost');
+    const aiCost = document.getElementById('aiCost');
+    const annualSavings = document.getElementById('annualSavings');
+
+    leadInput.addEventListener('input', (e) => {
+      const val = parseInt(e.target.value);
+      leadVal.textContent = val.toLocaleString();
+      
+      const human = Math.round(val * 5.0); // ~$5 per manually researched lead
+      const ai = (val * 0.003).toFixed(2); // $0.003 per API call
+      const annual = Math.round((human - ai) * 12);
+
+      humanCost.textContent = `$${human.toLocaleString()}/mo`;
+      aiCost.textContent = `$${ai}/mo`;
+      annualSavings.textContent = `$${annual.toLocaleString()} / yr`;
+    });
+  </script>
+</body>
+</html>
